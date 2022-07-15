@@ -1,0 +1,82 @@
+.header {
+    grid-area: header;
+    padding: 20px 20px;
+    background-color: $color-negro;
+    align-items: center;
+
+    nav {
+        display: flex;
+        background-color: $color-negro;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    text-transform: uppercase;
+
+    a {
+        color: $color-blanco;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    &:after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background-color: $color-marron;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
+
+.logo {
+    height: 80px;
+}
+
+////////////// MENU RESPONSIVE /////////////////
+
+@include breakpoint(md) {
+
+    .text-box h1 {
+        font-size: 32px;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: $color-negro;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -100%;
+        text-align: left;
+        z-index: 9999;
+        transition: 1s;
+
+        ul {
+            padding: 30px;
+        }
+    }
+
+    nav .fa-solid {
+        display: block;
+        color: $color-blanco;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .beer-column {
+        flex-basis: 90%;
+    }
+}

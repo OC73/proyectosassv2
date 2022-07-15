@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Imagenes sobre la fabrica y produccion de cervezas">
+    <meta name="keywords" content="BARRILES, FABRICA,PRODUCCION,CERVEZAS">
+	<title>Cervecería Huefra | La fábrica</title>
+	<link rel="icon" href="../img/myfavicon.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,600&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="grid-container">
+	<header class="header">
+		<nav>
+			<a href="../../index.html" class="logo nav-link"><img class="logo" src="./../img/logov2.jpg" alt="logo"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="../../index.html">Inicio</a></li>
+					<li><a href="../pages/productos.html">Productos</a></li>
+					<li><a href="../pages/fabrica.html">La fábrica</a></li>
+					<li><a href="../pages/nosotros.html">Nosotros</a></li>
+					<li><a href="../pages/contacto.html">Contacto</a></li>
+				</ul>
+			</div>
+			<i class="fa-solid fa-bars" onclick="showMenu()"></i>
+		</nav>
+	</header>
+
+	<!-- BODY -->
+
+	<div class="main gallery-background">
+		<!-- <h1>Galería de imágenes con Grid</h1> -->
+		<div class="gallery-container">
+			<div class="gallery__item">
+				<img src="./../img/galeria1.jpg" alt="" class="gallery__img">
+				<h2 class="gallery__title">Imagen 1</h2>
+			</div>
+			<div class="gallery__item">
+				<img src="./../img/galeria2.jpg" alt="" class="gallery__img">
+				<h2 class="gallery__title">Imagen 2</h2>
+			</div>
+			<div class="gallery__item">
+				<img src="./../img/galeria3.jpg" alt="" class="gallery__img">
+				<h2 class="gallery__title">Imagen 3</h2>
+			</div>
+			<div class="gallery__item">
+				<img src="./../img/galeria4.jpg" alt="" class="gallery__img">
+				<h2 class="gallery__title">Imagen 4</h2>
+			</div>
+			<div class="gallery__item">
+				<img src="./../img/galeria5.jpg" alt="" class="gallery__img">
+				<h2 class="gallery__title">Imagen 5</h2>
+			</div>
+			<div class="gallery__item">
+				<img src="./../img/galeria6.jpg" alt="" class="gallery__img">
+				<h2 class="gallery__title">Imagen 6</h2>
+			</div>
+			<div class="gallery__item">
+				<img src="./../img/galeria7.jpg" alt="" class="gallery__img">
+				<h2 class="gallery__title">Imagen 7</h2>
+			</div>
+			<div class="gallery__item">
+				<img src="./../img/galeria8.jpg" alt="" class="gallery__img">
+				<h2 class="gallery__title">Imagen 8</h2>
+			</div>
+			<div class="gallery__item">
+				<img src="./../img/galeria9.jpg" alt="" class="gallery__img">
+				<h2 class="gallery__title">Imagen 9</h2>
+			</div>
+		</div>
+	</div>
+
+<!-- FOOTER -->
+
+	<div class="footer">
+		<footer class="footer">
+			<div class="footer-content">
+				<h3>Cervecería Huefra</h3>
+				<ul class="socials">
+					<li><a href="https://www.facebook.com/Huefra-Puerto-Madryn-574169756281543/" target="_blank"><i
+								class="fa-brands fa-facebook"></i></a></li>
+					<li><a href="https://www.instagram.com/huefrapm/" target="_blank"><i
+								class="fa-brands fa-instagram"></i></a>
+					</li>
+					<li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+				</ul>
+				<div class="footer-bottom">
+					<p>Copyright © Cervecería Huefra 2022. Designed by zer0day</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	</section>
+	<!-- JavaScript for Toggle Menu -->
+	<script>
+		var navLinks = document.getElementById("navLinks");
+
+		function showMenu() {
+			navLinks.style.right = "0";
+		}
+
+		function hideMenu() {
+			navLinks.style.right = "-200px";
+		}
+	</script>
+</body>
+
+</html>

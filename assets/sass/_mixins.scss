@@ -1,0 +1,15 @@
+////////// MAPA DE MEDIA QUERIES ////////////
+$breakpoints: (xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px);
+
+////////// MIXIN DE MEDIA QUERIES ////////////
+@mixin breakpoint($size) {
+    @if map-has-key($breakpoints, $size) {
+        @media (max-width: #{map-get($breakpoints, $size)}) {
+            @content;
+        }
+    }
+}
