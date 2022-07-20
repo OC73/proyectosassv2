@@ -6,8 +6,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Formulario para contactarnos">
-    <meta name="keywords" content="CONTACTO, FORMULARIO,DUEÑOS">
+	<meta name="keywords" content="CONTACTO, FORMULARIO,DUEÑOS">
 	<title>Cervecería Huefra | Contacto</title>
+	<link rel="stylesheet" href="./../../bootstrap/css/bootstrap.min.css">
+	<script src="./../../bootstrap/js/jquery.slim.min.js"></script>
+	<script src="./../../bootstrap/js/bootstrap.bundle.min.js"></script>
 	<link rel="icon" href="../img/myfavicon.ico">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +24,10 @@
 </head>
 
 <body class="grid-container">
+	<!-- HEADER -->
 	<header class="header">
 		<nav>
-			<a href="../../index.html" class="logo nav-link"><img class="logo" src="./../img/logov2.jpg" alt="logo"></a>
+			<a href="../../index.html" class="logo"><img class="logo" src="./../img/logov2.jpg" alt="logo"></a>
 			<div class="nav-links" id="navLinks">
 				<i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
 				<ul>
@@ -37,9 +41,35 @@
 			<i class="fa-solid fa-bars" onclick="showMenu()"></i>
 		</nav>
 	</header>
-	<!-- formulario de contacto -->
-	<div class="main">
+	<!-- BODY -->
+	<div class="main d-flex align-items-center">
+		<div class="container h-50 text-white">
+			<h1>Contactanos!</h1>
+			<form class="row">
+				<div class="col-md-12">
+					<label for="fullName" class="form-label">Nombre y apellido</label>
+					<input type="text" class="form-control" id="fullName" required>
+				</div>
+				<div class="col-md-8">
+					<label for="emailInfo" class="form-label pt-1">E-mail</label>
+					<input type="email" class="form-control" id="emailInfo" required>
+				</div>
+				<div class="col-md-4">
+					<label for="phoneNumber" class="form-label pt-1">Numero de contacto</label>
+					<input type="text" class="form-control" id="phoneNumber" placeholder="+59 (123) 456789">
+				</div>
+				<div class="col-md-12">
+					<label for="comments" class="form-label pt-1">Mensaje</label>
+					<textarea class="form-control" id="comments" rows="3"></textarea>
+				</div>
+				<div class="col-md-12 mt-3">
+					<button type="submit" class="btn btn-primary">Enviar</button>
+				</div>
+			</form>
+		</div>
 	</div>
+	</di>
+	<!-- FOOTER -->
 	<div class="footer">
 		<footer class="footer">
 			<div class="footer-content">
@@ -53,7 +83,7 @@
 					<li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
 				</ul>
 				<div class="footer-bottom">
-					<p>Copyright © Cervecería Huefra 2022. Designed by zer0day</p>
+					<p>Copyright © Cervecería Huefra 2022.</p>
 				</div>
 			</div>
 		</footer>

@@ -46,7 +46,7 @@
 
 ////////////// MENU RESPONSIVE /////////////////
 
-@include breakpoint(md) {
+@include breakpointD(md) {
 
     .text-box h1 {
         font-size: 32px;

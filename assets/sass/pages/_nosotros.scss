@@ -1,0 +1,80 @@
+// Aca implemente mobile first
+
+.nosotros{
+    display: flex;
+    align-items: center;
+}
+.box{
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+
+    .imgBox {
+        display: flex;
+        justify-content: center;
+        min-width: 50%;
+        img {
+            max-width: 80%;
+            padding-bottom: 5px;
+            border-radius: 10px;
+        }
+    }
+
+    .content{
+        color: $color-blanco;
+        max-width: 600px;
+        text-align: justify;
+
+    }
+
+    h1{
+        text-align: center;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    p{
+        padding-right: 40px;
+    }
+}
+
+@include breakpointD(md) {
+
+    .box{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+
+        p{
+            padding: 10px;
+        }
+        .imgBox {
+        
+            justify-content: center;
+            img {
+                max-width: 80%;
+
+                padding-bottom: 5px;
+                border-radius: 10px;
+            }
+    }
+
+
+        .content{
+            color: $color-blanco;
+            max-width: 600px;
+            text-align: justify;
+        }
+
+        h1{
+            text-align: center;
+            margin: 0;
+            padding-left: 0;
+        }
+    }
+}

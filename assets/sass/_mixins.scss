@@ -5,11 +5,19 @@ $breakpoints: (xs: 0,
     lg: 992px,
     xl: 1200px);
 
-////////// MIXIN DE MEDIA QUERIES ////////////
-@mixin breakpoint($size) {
+////////// MIXIN DE MEDIA QUERIES DESKTOP FIRST ////////////
+@mixin breakpointD($size) {
     @if map-has-key($breakpoints, $size) {
         @media (max-width: #{map-get($breakpoints, $size)}) {
             @content;
         }
     }
+}
+////////// MIXIN DE MEDIA QUERIES MOBILE FIRST ////////////
+@mixin breakpointM($size) {
+    @if map-has-key($breakpoints, $size) {
+        @media (min-width: #{map-get($breakpoints, $size)}) {
+            @content;
+        }
+    } 
 }
